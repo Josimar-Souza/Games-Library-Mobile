@@ -18,8 +18,6 @@ const GameItem = ({ game }) => {
     releaseDate,
   } = game;
 
-  console.log(game);
-
   return (
     <GameContainer>
       <GameImage
