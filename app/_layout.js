@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, StatusBar } from 'react-native';
+import { View, Text } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 import { Slot } from 'expo-router';
 
 const MainLayout = () => {
