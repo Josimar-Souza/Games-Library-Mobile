@@ -4,6 +4,7 @@
     "slug": "Games-Library-Mobile",
     "version": "1.0.0",
     "orientation": "portrait",
+    "scheme": "my-scheme",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
