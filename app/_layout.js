@@ -14,7 +14,6 @@ const MainLayout = () => {
         <View>
           <Header />
           <Slot />
-          <StatusBar translucent={false} />
         </View>
       </ToastProvider>
     </GamesContextProvider>
