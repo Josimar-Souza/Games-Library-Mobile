@@ -1,11 +1,13 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+
+import MainPageContainer from './HomePageStyles';
+import components from '../src/components';
 
 const HomePage = () => {
   return (
-    <View>
-      <Text>Test app.</Text>
-    </View>
+    <MainPageContainer>
+      <components.GameList />
+    </MainPageContainer>
   );
 }
 
