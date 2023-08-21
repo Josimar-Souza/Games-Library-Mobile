@@ -26,7 +26,9 @@ const GamesContextProvider = ({ children }) => {
   }
 
   const SearchGameByName = (name) => {
-    const gamesFounded = games.filter((game) => game.title.includes(name));
+    if (typeof (name) !== 'string') return;
+
+    const gamesFounded = games.filter((game) => game.title.toLowerCase().includes(name.toLowerCase()));
 
     setGamesToShow(gamesFounded);
   };
