@@ -1,10 +1,12 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 
+import components from '../src/components';
+
 const HomePage = () => {
   return (
     <View>
-      <Text>Test app.</Text>
+      <components.GameList />
     </View>
   );
 }
