@@ -18,6 +18,8 @@ const Header = () => {
         width="90%"
         placeholder="Digite o nome de um jogo"
         onChange={onInputChange}
+        border_width="0 0 1px 0"
+        backgroundColor="rgba(0, 0, 0, 0)"
       />
     </HeaderContainer>
   );
