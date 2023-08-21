@@ -5,13 +5,14 @@ import { Slot } from 'expo-router';
 import { ToastProvider } from 'react-native-toast-notifications';
 
 import GamesContextProvider from '../src/context/GamesContext';
+import Header from '../src/components/Header';
 
 const MainLayout = () => {
   return (
     <GamesContextProvider>
       <ToastProvider>
         <View>
-          <Text>The header will be here!</Text>
+          <Header />
           <Slot />
           <StatusBar translucent={false} />
         </View>
