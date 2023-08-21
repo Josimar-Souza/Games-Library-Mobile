@@ -8,6 +8,7 @@ import {
   Info,
   Title,
 } from './gameItemStyles';
+import Button from '../Button';
 
 const GameItem = ({ game }) => {
   const {
@@ -31,6 +32,11 @@ const GameItem = ({ game }) => {
         <Info>{developer}</Info>
         <Info>{format(new Date(releaseDate), 'dd/MM/yyyy')}</Info>
       </InfoContainer>
+      <Button
+        text="Ver detalhes"
+        width="50%"
+        margin="0 auto"
+      />
     </GameContainer>
   )
 };
