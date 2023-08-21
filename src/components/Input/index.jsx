@@ -29,7 +29,7 @@ const Input = ({
       roundedBorderRadius={roundedBorderRadius}
       color={color}
       placeholder={placeholder}
-      onTextInput={onChange}
+      onChangeText={onChange}
       border_width={border_width}
     />
   );
