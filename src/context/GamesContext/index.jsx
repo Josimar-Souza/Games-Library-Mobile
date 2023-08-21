@@ -21,6 +21,12 @@ const GamesContextProvider = ({ children }) => {
     }
   }
 
+  const SearchGameByName = (name) => {
+    const gamesFounded = games.filter((game) => game.title.includes(name));
+
+    setGamesToShow(gamesFounded);
+  };
+
   useEffect(() => {
     GetAllGames();
   }, []);
@@ -29,6 +35,7 @@ const GamesContextProvider = ({ children }) => {
     games,
     gamesToShow,
     GetAllGames,
+    SearchGameByName,
   }), [games, gamesToShow]);
 
   return (

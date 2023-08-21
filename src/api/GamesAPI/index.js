@@ -1,13 +1,13 @@
 import axios from 'axios';
 import CustomError from '../../helpers/CustomError'
 
-const baseUrl = process.env.EXPO_PUBLIC_API_URL;
+const baseURL = process.env.EXPO_PUBLIC_API_URL;
 
 class GamesAPI {
   constructor(timeout = 20000) {
     this.api = axios.create({
       timeout,
-      baseUrl,
+      baseURL,
     })
   }
 
